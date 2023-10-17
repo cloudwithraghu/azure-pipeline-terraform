@@ -36,9 +36,9 @@ stages:
               provider: 'azurerm'
               command: 'init'
               workingDirectory: '$(Build.SourcesDirectory)/${{ parameters.image }}'
-              backendServiceArm: 'AzureMSDN-ADO Intro'
+              backendServiceArm: 'scndevops'
               backendAzureRmResourceGroupName: 'terraform'
-              backendAzureRmStorageAccountName: 'txtx'
+              backendAzureRmStorageAccountName: 'uxux'
               backendAzureRmContainerName: 'terraform'
               backendAzureRmKey: 'terraform.tfstate'
           
@@ -48,4 +48,4 @@ stages:
               provider: 'azurerm'
               command: 'apply'
               workingDirectory: '$(Build.SourcesDirectory)/${{ parameters.image }}'
-              environmentServiceNameAzureRM: 'AzureMSDN-ADO Intro'
+              environmentServiceNameAzureRM: 'scndevops'
